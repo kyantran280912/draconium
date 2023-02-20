@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <template>
+        <div>
+          <cooheader isHomePage="0"/>
+          <div id="solo-arena">
+            <img src="/static/img/solo-effect-1.png" class="effect-1">
+            <img src="/static/img/vs-icon.png" class="effect-2">
+            <img src="/static/img/win.png" class="you-win">
+            <img src="/static/img/lose.png" class="you-lose">
+            <img src="/static/img/success.gif" class="success">
+            <img src="/static/img/yourturn.png" class="your-turn">
+            <a href="/solo" class="btn btn-primary btn-play-again">PLAY AGAIN</a>
+            <div class="player-1">
+              <div class="info info-left">
+                <div class="avatar">
+                  <img src="https://api.coopet.io/api/avatarImage/17.jpg">
+                </div>
+                <p class="name">Dragon #1</p>
+                <div class="health-wrapper">
+                  <div class="health" :style="'width: '+healthLeftPercent+'%'"></div>
+                </div>
+                <img src="/static/img/info-frame.png" class="frame">
+              </div>
+              <div class="dragon dragon-left">
+                <img src="/static/img/light-effect.png" class="light-effect-left">
+                <img src="https://api.coopet.io/api/characterImage/bHPQciUxmPhzo1qQVniIemlwIVb5Fjvt.png" class="image image-left">
+              </div>
+              <div class="skill">
+                <div class="skill-wrapper">
+                  <img src="/static/img/skill/water-skill-1.png" class="btn-skill skill-1" data-skill-type="water" data-skill-number="1">
+                  <div class="skill-overlay-1"></div>
+                  <img src="/static/img/skill/water-skill-2.png" class="btn-skill skill-2" data-skill-type="water" data-skill-number="2">
+                  <div class="skill-overlay-2"></div>
+                  <img src="/static/img/skill/water-skill-3.png" class="btn-skill skill-3" data-skill-type="water" data-skill-number="3">
+                  <div class="skill-overlay-3"></div>
+                </div>
+                <img src="/static/img/skill-frame.png" class="frame">
+              </div>
+            </div>
+            <div class="player-2">
+              <div class="info info-right">
+                <div class="avatar">
+                  <img src="https://api.coopet.io/api/avatarImage/18.jpg">
+                </div>
+                <p class="name">Dragon #2</p>
+                <div class="health"></div>
+                <div class="health-wrapper">
+                  <div class="health" :style="'width: '+healthRightPercent+'%'"></div>
+                </div>
+                <img src="/static/img/info-frame.png" class="frame">
+              </div>
+              <div class="dragon dragon-right">
+                <img src="/static/img/light-effect.png" class="light-effect-right">
+                <img src="https://api.coopet.io/api/characterImage/hjwsDnYc7Tjci6cfJwH94lT3Xdkq28Ll.png" class="image image-right">
+              </div>
+              <!-- <div class="skill">
+                <div class="skill-wrapper">
+                  <img src="/static/img/skill/fire-skill-1.png" class="skill-1">
+                  <img src="/static/img/skill/fire-skill-2.png" class="skill-2">
+                  <img src="/static/img/skill/fire-skill-3.png" class="skill-3">
+                </div>
+                <img src="/static/img/skill-frame.png" class="frame">
+              </div> -->
+            </div>
+            <div class="skill-gif-right"></div>
+            <div class="skill-gif-left"></div>
+            <div class="overlay"></div>
+          </div>
+          <coofooter></coofooter>
+        </div>
+      </template>
+</body>
+</html>
